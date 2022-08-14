@@ -17,12 +17,12 @@ pub fn swap(n: i32, i: i32, j: i32) -> i32 {
         return n ^ mask;
     }
 
-    return 0;
+    return n;
 }
 
 #[test]
 fn swap_test() {
-    assert_eq!(swap(12, 1, 0), 0);
+    assert_eq!(swap(12, 1, 0), 12);
     assert_eq!(swap(12, 1, 2), 10);
-    assert_eq!(swap(12, 3, 2), 0);
+    assert_eq!(swap(12, 3, 2), 12);
 }
